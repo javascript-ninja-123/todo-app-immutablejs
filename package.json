@@ -1,0 +1,75 @@
+{
+  "name": "create-react-app-fox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server --inline --hot",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "test": "NODE_ENV=test jest --no-cache"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "history": "^4.7.2",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.5",
+    "ramda": "^0.25.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^4.0.0",
+    "redux-form": "^7.3.0",
+    "redux-observable": "^0.18.0",
+    "rxjs": "^5.5.10",
+    "uniqid": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
+    "@babel/polyfill": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/preset-react": "^7.0.0-beta.44",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^8.0.0-beta.2",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.4.3",
+    "node-sass": "^4.8.3",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.3.2",
+    "redux-mock-store": "^1.5.1",
+    "regenerator-runtime": "^0.11.1",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-7-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "setupTestFrameworkScriptFile": "./src/setupTest.js",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ]
+  }
+}
